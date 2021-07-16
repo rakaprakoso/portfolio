@@ -18,10 +18,4 @@ const tailwindcss = require('tailwindcss');
  .sass('resources/sass/app.scss', 'public/css')
  .options({
      postCss: [ tailwindcss('./tailwind.config.js') ],
- })
- // .purgeCss({
- //     enabled: mix.inProduction(),
- //     folders: ['src', 'templates'],
- //     extensions: ['html', 'js', 'php', 'vue'],
- // })
- ;
+ });
