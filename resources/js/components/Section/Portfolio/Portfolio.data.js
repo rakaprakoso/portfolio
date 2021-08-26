@@ -2,32 +2,32 @@ export default [
     {
         title: 'Kacinvest',
         imgUrl: '/img/portfolio/Kacinvest.jpg',
-        url:'#'
+        url:'/img/portfolio/Kacinvest.jpg'
     },
     {
         title: 'King Smith Walking Pad – Company Profile',
         imgUrl: '/img/portfolio/King Smith Walking Pad.png',
-        url:'#'
+        url:'https://kingsmithwalkingpad.com/'
     },
     {
         title: 'PUSC – Organization Profile',
         imgUrl: '/img/portfolio/PUSC.png',
-        url:'#'
+        url:'https://pusc.shikaproject.com/'
     },
     {
         title: 'Keina Beauty – Online Shop',
         imgUrl: '/img/portfolio/Keina Beauty.png',
-        url:'#'
+        url:'https://keinabeauty.com/'
     },
     {
         title: 'Arif Furniture Indonesia – Online Shop',
         imgUrl: '/img/portfolio/Arif Furniture Indonesia.png',
-        url:'#'
+        url:'https://ariffurnitureindonesia.com/'
     },
     {
         title: 'Moorid Learning Center – Company Profile',
         imgUrl: '/img/portfolio/Moorid.png',
-        url:'#'
+        url:'https://mooridlearningcenter.com/'
     },
     {
         title: 'Baksos Management',
@@ -37,6 +37,6 @@ export default [
     {
         title: 'IDMC – Forum',
         imgUrl: '/img/portfolio/IDMC.png',
-        url:'#'
+        url:'http://idmc2020.id/'
     },
 ]

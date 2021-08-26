@@ -21,7 +21,7 @@ const Portfolio1 = () => {
                                                 src={item.imgUrl} />
                                             <div className="text-container">
                                                 <h3>{item.title}</h3>
-                                                <a href="#" target="_blank">
+                                                <a href={item.url} target="_blank">
                                                 <FaLink/>
                                                 </a>
                                             </div>
