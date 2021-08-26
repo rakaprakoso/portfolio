@@ -20,6 +20,16 @@ export default [
         detail:
         [
             {
+                title: 'INTERN VR LEARNING PROGRAM',
+                sub_title: 'CIMB Niaga',
+                duration: '2021 – Present',
+            },
+            {
+                title: 'INTERN QUALITY ASSURANCE',
+                sub_title: 'Agate Studio',
+                duration: '2021 – 2021',
+            },
+            {
                 title: 'WEB DEVELOPER FREELANCE',
                 sub_title: 'ANZ Design Indonesia',
                 duration: '2020 – Present',
