@@ -1,15 +1,19 @@
 import resumeData from "./Resume.data"
 
-const Resume1 = () => {
+const Resume1 = ({data}) => {
     const imgUrl = '/img/background/bg-pusc.jpg'
     const sectionStyle = {
         backgroundImage: 'url(' + imgUrl + ')',
         backgroundPositionX: 'center',
         backgroundPositionY: 'top',
     };
-
+    var resumeDataNew = data && [
+        {type: 'Education', detail: data.education},
+        {type: 'Work Experience', detail: data.jobs_experience},
+        {type: 'Education', detail: data.organization_experience},
+    ];
     return (
-        <section 
+        <section
         id="resume"
         style={sectionStyle}
         className="py-20 bg-primaryLight-100 relative">
@@ -24,8 +28,8 @@ const Resume1 = () => {
                             Resume
                         </h2>
                         <div className="row">
-                            {resumeData.map((item, i) => (
-                                <div key={i} className="col-lg-6">
+                            {data && resumeDataNew.map((item, i) => (
+                                <div key={i} className="col-lg-4">
                                     <h3 className="resume-title">{item.type}</h3>
                                     {item.detail.map((itemDetail, j) => (
                                         <div key={j} className="resume-item">

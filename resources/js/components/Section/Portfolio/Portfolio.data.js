@@ -1,5 +1,10 @@
 export default [
     {
+        title: 'ICStar Hackathon - Offboarding Employee',
+        imgUrl: '/img/portfolio/Kacinvest.jpg',
+        url:'https://offboarding.deprakoso.com/'
+    },
+    {
         title: 'Kacinvest',
         imgUrl: '/img/portfolio/Kacinvest.jpg',
         url:'/img/portfolio/Kacinvest.jpg'

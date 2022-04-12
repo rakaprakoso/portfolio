@@ -1,11 +1,11 @@
-
 // import Link from 'next/link'
 // import Image from 'next/image'
 
-import menuItems from '../Header/Header.data'
-import socialIcons from './Footer.data'
+import menuItems from "../Header/Header.data";
+import socialIcons from "./Footer.data";
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
+import { Link as ScrollLink} from 'react-scroll'
 
 const Footer1 = () => {
     return (
@@ -16,12 +16,15 @@ const Footer1 = () => {
                         <div className="row">
                             <div className="col-lg-4 flex">
                                 <div className=" flex-grow lg:text-left text-center lg:mb-0 mb-6">
-
-                                        <a href="/" className="footer-brand" >
-                                            <img src="/img/logo big.png" alt="logo" width='100px' height='100px' />
-                                            <span>Raka D Prakoso</span>
-                                        </a>
-
+                                    <a href="/" className="footer-brand">
+                                        <img
+                                            src="/img/logo big.png"
+                                            alt="logo"
+                                            width="100px"
+                                            height="100px"
+                                        />
+                                        <span>Raka D Prakoso</span>
+                                    </a>
                                 </div>
                             </div>
                             <div className="col-lg-4 flex items-end lg:text-left text-center">
@@ -32,8 +35,23 @@ const Footer1 = () => {
                                                 Navigation Menu
                                             </div>
                                             <ul>
-                                                {menuItems.map((item,i)=>(
-                                                    <li key={i}><a href={item.path}>{item.label}</a></li>
+                                                {menuItems.map((item, i) => (
+                                                    <li key={i}>
+                                                        <ScrollLink
+                                                            // href={menuItem.path}
+                                                            activeClass="active"
+                                                            to={item.pathID}
+                                                            spy={true}
+                                                            smooth={true}
+                                                            offset={0}
+                                                            duration={700}
+                                                            delay={100}
+                                                            className="nav-link"
+                                                        >
+                                                            {item.label}
+                                                        </ScrollLink>
+                                                        {/* <a href={item.path}>{item.label}</a> */}
+                                                    </li>
                                                 ))}
                                             </ul>
                                         </nav>
@@ -44,7 +62,11 @@ const Footer1 = () => {
                                 <div className="flex-grow-1">
                                     <div className="social-icons">
                                         {socialIcons.map((item, i) => (
-                                            <a key={i} className="" href={item.url}>
+                                            <a
+                                                key={i}
+                                                className=""
+                                                href={item.url}
+                                            >
                                                 {item.icon}
                                             </a>
                                         ))}
@@ -59,7 +81,7 @@ const Footer1 = () => {
                 </div>
             </div>
         </footer>
-    )
-}
+    );
+};
 
-export default Footer1
+export default Footer1;

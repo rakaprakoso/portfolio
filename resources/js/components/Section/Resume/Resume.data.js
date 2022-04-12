@@ -20,6 +20,11 @@ export default [
         detail:
         [
             {
+                title: 'RPA Developer',
+                sub_title: 'Indosat Ooredoo Hutchinson',
+                duration: '2021 – Present',
+            },
+            {
                 title: 'INTERN VR LEARNING PROGRAM',
                 sub_title: 'CIMB Niaga',
                 duration: '2021 – Present',
